@@ -5,10 +5,21 @@
     <link rel="icon" type="image/svg+xml" href="/agar/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React</title>
-    <script type="module" crossorigin src="/agar/assets/index-CeJaaZ13.js"></script>
-    <link rel="stylesheet" crossorigin href="/agar/assets/index-BSvd8BiM.css">
+    <script type="module" crossorigin src="/agar/assets/main-0KslCqRl.js"></script>
+    <link rel="stylesheet" crossorigin href="/agar/assets/main-BSvd8BiM.css">
   </head>
   <body>
     <div id="root"></div>
+
+    <script>
+      (() => {
+        const redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect !== location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
+
   </body>
 </html>
